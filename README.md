@@ -2,15 +2,6 @@
 
 DeResUNet (DualEncodeResidualUNet) is a deep learning model for semantic segmentation tasks. The project is implemented in PyTorch and uses the SunRGBD dataset for training and evaluation.
 
-## Overview
-
-The project includes the following components:
-
-- DeResUNet: The main model architecture, which is a variant of the U-Net model with residual connections.
-- BatchNorm2D & PixelShuffle: Key operations used in the model.
-- Albumentations: A library used for data augmentation.
-- PyTorch Lightning: A lightweight PyTorch wrapper for high-performance AI research.
-
 ## Dataset
 
 The model is trained on the SunRGBD dataset, which includes over 10,000 RGB-D images. The dataset provides 2D polygons and 3D bounding box annotations.
@@ -18,18 +9,6 @@ The model is trained on the SunRGBD dataset, which includes over 10,000 RGB-D im
 ## Model Architecture
 
 The DeResUNet model is composed of two parallel ResNet50 encoders, a bottleneck layer, and a decoder that uses PixelShuffle for upsampling.
-
-## Training
-
-The model is trained with a batch size of 6, an initial learning rate of 1e-4, and uses the ReduceLROnPlateau learning rate scheduler. Training is stopped early if the validation loss does not improve for a certain number of epochs.
-
-## Performance
-
-The model's performance is evaluated using the Intersection over Union (IoU) metric. The IoU values and loss values during training are logged for analysis.
-
-## Usage
-
-To train the model, run the `train.ipynb` notebook. Make sure to install the dependencies listed in `requirements-linux.txt`.
 
 ## References
 
