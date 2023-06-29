@@ -1,8 +1,6 @@
 # DeResUNet
 
-![DeResUNet](https://dopbs.twimg.com/media/Fv1EjNuakAE44z_.jpg:large)
-
-DeResUNet is a deep learning model for semantic segmentation tasks. The project is implemented in PyTorch and uses the SunRGBD dataset for training and evaluation.
+DeResUNet (DualEncodeResidualUNet) is a deep learning model for semantic segmentation tasks. The project is implemented in PyTorch and uses the SunRGBD dataset for training and evaluation.
 
 ## Overview
 
